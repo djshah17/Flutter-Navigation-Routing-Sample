@@ -104,12 +104,12 @@ SecondScreen({this.listPlayerNames});
 
 ## Return data from Second Screen to First Screen with Pop
 
-## In Second Screen
+### In Second Screen
 ```dart
 Navigator.pop(context,playerName);
 ```
 
-## in First Screen
+### in First Screen
 ```dart
 displayResult(BuildContext context, List<String> playerNames) async{
     final getSelectedPlayerName = await Navigator.pushNamed(context, "/SecondScreen", arguments: playerNames);
